@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li [class]="getAllCategoryClass()" routerLink = "/products">Tüm Ürünler</li>
+    <li (click)="setCurrentCategory(category)" 
+    routerLink = "/products/category/{{category.categoryId}}"
+    *ngFor="let category of categories" 
+    [class]="getCurrentCategoryClass(category)">
+    {{category.categoryName}}</li> 
+  </ul>
+
+  <h5 *ngIf="currentCategory">{{currentCategory.categoryName}} Seçtiniz</h5>
+
+<!-- Eğer class'ı companentteki bir bilgiyle veya metod vs. class [] içine alırız.
+Rental carda img srcsi [class] gibi verilecek. 
+-->
