@@ -10,7 +10,7 @@ import { CategoryComponent } from './companents/category/category.component';
 import { NaviComponent } from './companents/navi/navi.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VatAddedPipe } from './pipes/vat-added.pipe';
-import { FilterPipePipe } from './pipes/filter-pipe.pipe';
+import { FilterPipe } from './pipes/filter-pipe';
 
 import { ToastrModule } from 'ngx-toastr';
 import { CartSummeryComponent } from './companents/cart-summery/cart-summery.component';
@@ -22,7 +22,7 @@ import { CartSummeryComponent } from './companents/cart-summery/cart-summery.com
     CategoryComponent,
     NaviComponent,
     VatAddedPipe,
-    FilterPipePipe,
+    FilterPipe,
     CartSummeryComponent
   ],
   imports: [

@@ -4,7 +4,7 @@ import { Product } from '../models/product';
 @Pipe({
   name: 'filterPipe'
 })
-export class FilterPipePipe implements PipeTransform {
+export class FilterPipe implements PipeTransform {
 
   transform(value: Product[], filterText:string): Product[] {
     filterText = filterText ? filterText.toLocaleLowerCase() : "";
