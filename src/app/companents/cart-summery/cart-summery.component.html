@@ -4,10 +4,10 @@
     </a>
     <ul class="dropdown-menu">
       <li *ngFor="let cartItem of cartItems">
-        <button type="button" class="btn btn-primary">
-          Notifications <span class="badge text-bg-secondary">{{cartItem.quantity}}</span>
-        </button>
-        <a class="dropdown-item">{{" " +cartItem.product.productName + " "}}<span (click)="removeFromCart(cartItem.product)" class="badge text-bg-danger">Sil</span></a>
+        <!-- <button type="text" class="btn btn-primary"> -->
+          <a class="dropdown-item"><span class="badge text-bg-secondary">{{cartItem.quantity}}</span>
+        <!-- </button> -->
+      {{" " +cartItem.product.productName + " "}}<span (click)="removeFromCart(cartItem.product)" class="badge text-bg-danger">Sil</span></a>
       </li>
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item">Sepete Git</a></li>

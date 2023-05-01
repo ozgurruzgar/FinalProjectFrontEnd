@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,7 @@ import { FilterPipe } from './pipes/filter-pipe';
 
 import { ToastrModule } from 'ngx-toastr';
 import { CartSummeryComponent } from './companents/cart-summery/cart-summery.component';
+import { ProductAddComponent } from './companents/product-add/product-add.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import { CartSummeryComponent } from './companents/cart-summery/cart-summery.com
     NaviComponent,
     VatAddedPipe,
     FilterPipe,
-    CartSummeryComponent
+    CartSummeryComponent,
+    ProductAddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       positionClass:"toast-bottom-right",
